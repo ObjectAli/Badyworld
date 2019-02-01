@@ -1,0 +1,36 @@
+@import "../lib/vars"
+.table
+  &__row
+    display: flex
+    justify-content: space-between
+    padding: 15px
+    border-radius: 30px
+    text-align: center
+    align-items: center
+    margin-bottom: 5px
+    &:nth-child(even)
+      background: $light-grey
+    &--empty
+      justify-content: center
+      background: none !important
+  &__head
+    background: $colored2
+  &__th
+    color: $color-dark
+    font-weight: 600
+    font-size: 12px
+    width: 30%
+    &:first-child
+      width: 10%
+
+  &__cell
+    width: 30%
+    word-wrap: break-word
+    &:first-child
+      width: 10%
+
+
+@media (max-width: 900px)
+  .table
+    &__cell, &__th
+      font-size: 10px

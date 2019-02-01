@@ -1,0 +1,152 @@
+.pay__tabs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 34px;
+  margin: 25px 0 0;
+  /*&:before
+   * content: ''
+   * border-top: 1px solid rgba(255, 255, 255, 0.26)
+   * position: absolute
+   * top: 0
+   * left: 0
+   * right: 0 */ }
+.pay__tab-btn {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  width: 33.3333%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid;
+  transition: background 0.2s;
+  position: relative;
+  opacity: 0.4; }
+  .pay__tab-btn.active {
+    opacity: 1;
+    cursor: default; }
+.pay__tab {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .pay__tab.active {
+    display: flex; }
+.pay__type-label {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  border: 2px solid #e8e8e8;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s; }
+  .pay__type-label:hover {
+    border-color: #336bb8; }
+.pay__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 142px;
+  height: 25px;
+  background: url(../img/aid_pays.png) no-repeat; }
+  .pay__icon.wm {
+    background-position: -8px -50px;
+    width: 142px;
+    height: 37px; }
+  .pay__icon.qiwi {
+    background-position: -18px 0px;
+    width: 114px;
+    height: 50px; }
+  .pay__icon.yandex {
+    background-position: 0px -260px;
+    width: 132px;
+    height: 51px; }
+  .pay__icon.bitcoin {
+    background-position: 0px -95px;
+    width: 120px;
+    height: 28px; }
+  .pay__icon.advcash {
+    background-position: -10px -144px;
+    width: 140px;
+    height: 27px; }
+  .pay__icon.payeer {
+    background-position: -12px -212px;
+    width: 128px;
+    height: 26px; }
+  .pay__icon.liqpay {
+    background-position: -149px -1px;
+    height: 29px; }
+  .pay__icon.sber {
+    background-position: -150px -35px;
+    height: 41px; }
+  .pay__icon.alfa {
+    background-position: -149px -76px;
+    height: 43px;
+    width: 144px; }
+  .pay__icon.mts {
+    background-position: -149px -155px;
+    height: 52px;
+    width: 144px; }
+  .pay__icon.bee {
+    background-position: -149px -207px;
+    height: 44px;
+    width: 144px; }
+  .pay__icon.megafon {
+    background-position: -149px -251px;
+    height: 26px;
+    width: 144px; }
+  .pay__icon.tele2 {
+    background-position: -149px -277px;
+    height: 53px;
+    width: 138px; }
+  .pay__icon.other {
+    background-position: -149px -120px;
+    height: 35px;
+    width: 144px; }
+.pay__sub-text {
+  display: block;
+  font-size: 11px; }
+.pay__type {
+  position: relative;
+  width: 176px;
+  height: 85px;
+  margin: 0 0 13px; }
+  .pay__type input[type="radio"] {
+    display: none; }
+    .pay__type input[type="radio"]:checked + .pay__type-label {
+      border-color: #ffe92f; }
+.pay__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+.pay__submit {
+  height: 55px;
+  width: 360px;
+  text-transform: uppercase;
+  font-size: 12px; }
+.pay__input {
+  height: 55px;
+  width: 174px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #a1a4ac;
+  background: #e8e8e8;
+  border-radius: 60px;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0 27px; }
+.pay__error {
+  color: #fc3548;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -25px; }
+  .pay__error.active {
+    display: block; }
+
+/*# sourceMappingURL=pay.css.map */

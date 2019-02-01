@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 667px;
+  background: #fff;
+  box-shadow: rgba(74, 32, 115, 0.09) 0 7px 79px 33px;
+  position: relative; }
+  .card__column {
+    padding: 50px 50px 70px;
+    height: 100%;
+    box-sizing: border-box; }
+    .card__column:nth-child(1) {
+      position: relative; }
+      .card__column:nth-child(1):before {
+        content: "";
+        position: absolute;
+        top: 98px;
+        bottom: 70px;
+        width: 1px;
+        background: #e1dfe3;
+        left: 100%; }
+  .card__content {
+    width: calc(100% - 410px);
+    box-sizing: border-box; }
+  .card__aside {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-self: flex-start; }
+  .card__text {
+    font-size: 18px; }
+    .card__text p {
+      margin: 0 0 30px; }
+
+/*# sourceMappingURL=card.css.map */

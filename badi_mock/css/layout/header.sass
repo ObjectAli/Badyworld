@@ -1,0 +1,78 @@
+@import "../lib/vars"
+
+.header
+  @extend .wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  padding-top: 50px
+  margin-bottom: 54px
+  color: #fff
+
+.logo
+  width: 315px
+
+.menu
+  display: flex
+  justify-content: left
+  font-family: $fontFuturaPT
+  font-size: 12px
+  font-weight: 600
+  margin-right: 150px
+  &__link
+    color: #fefefe
+    margin-right: 60px
+    text-transform: uppercase
+    &:hover
+      color: #ffb822
+
+.login
+  width: 107px
+  display: flex
+  justify-content: space-between
+  &__link
+    font-size: 15px
+    vertical-align: middle
+    background: #ffb822
+    color: black
+    @include size(46px, 46px)
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.3s
+
+    &:hover
+      color: $colored2
+
+.signed
+  display: flex
+  justify-content: space-between
+  flex-direction: column-reverse
+  &__avatar
+    width: 50px
+    height: 50px
+    display: block
+    border-radius: 50%
+    margin-right: 10px
+  &__column
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    text-transform: uppercase
+    font-family: $fontVentiCF
+    &:nth-child(1)
+      margin-top: 15px
+  &__add
+    width: 26px
+    border: none
+    background: #ffd03c
+    color: #303030
+    height: 26px
+    display: flex
+    justify-content: center
+    border-radius: 50%
+    margin-left: 15px
+    align-items: center

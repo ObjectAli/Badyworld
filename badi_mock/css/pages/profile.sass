@@ -1,0 +1,184 @@
+@import "../lib/vars"
+$p-light-grey: #e7e7e7
+.profile
+  color: #202124
+  &__card_other
+    flex-direction: column
+    height: auto
+
+  &__left
+    width: 410px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 0
+    text-align: center
+    &_other
+      width: 100%
+      align-items: center
+      height: 250px
+      &:nth-child(1):before
+        right: 50px
+        left: 50px
+        width: auto
+        height: 1px
+        top: initial
+        bottom: 50px
+
+  &__right
+    width: 860px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    &_other
+      width: 100%
+      padding-top: 0
+      height: auto
+
+  &__ava
+    @include size(180px, 180px)
+    margin: -63px auto 30px
+    border-radius: 50%
+    overflow: hidden
+  &__name
+    font-size: 22px
+    font-weight: 700
+    vertical-align: middle
+  &__exit
+    @include size(24px, 24px)
+    background: url(../img/icons/icons.png) no-repeat -93px 0
+    display: inline-block
+    vertical-align: middle
+    margin-left: 5px
+  &__balance
+    font-size: 16px
+    font-weight: 700
+    margin: 20px 0
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    &-big
+      font-size: 42px
+      font-family: 'Stem'
+      text-shadow: #ffdb4c 2px 1px 0
+  &__btn
+    @include size(254px, 82px)
+    font-size: 12px
+
+  &__title
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 20px
+  &__title2
+    font-size: 18px
+    text-align: center
+    font-weight: 700
+    margin-bottom: 5px
+
+  &__form
+    position: relative
+    margin: 20px 0 0
+  &__field
+    box-sizing: border-box
+    @include size(100%, 56px)
+    border: 1px solid $p-light-grey
+    border-radius: 50px
+    padding: 0 97px 0 27px
+  &__submit
+    @include size(81px, 43px)
+    background: #6bd15d
+    position: absolute
+    color: #fff
+    right: 8px
+    top: 6px
+    border: none
+    margin: 0
+  &__text
+    font-weight: 500
+    font-size: 11px
+    text-align: center
+    line-height: 16px
+  &__goods
+    display: flex
+    justify-content: space-between
+    width: 760px
+  &__pagination
+    position: absolute
+    right: 25px
+    top: 53px
+    .pagination
+      li
+        display: none
+        &.prev, &.next
+          display: flex
+          font-size: 34px
+          a
+            color: #6e2bb1
+            height: 20px
+        &.disabled a
+          color: #ebefef
+
+.p-good
+  position: relative
+  @include size(253px, 490px)
+  box-sizing: border-box
+  border: 1px solid $p-light-grey
+  overflow: hidden
+  font-size: 10px
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    width: 100%
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.60) 200px, #fff 300px)
+    z-index: 1
+  &__img
+    min-height: 304px
+    max-width: initial
+    width: 100%
+    object-fit: cover  
+  &__footer
+    position: absolute
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    bottom: 0
+    left: 0
+    width: 100%
+    min-height: 190px
+    z-index: 2
+    padding: 0 26px 40px
+    box-sizing: border-box
+
+  &__number
+    font-weight: 600
+    font-size: 16px
+    font-family: 'Stem'
+    margin-bottom: 15px
+  &__name
+    font-weight: 900
+    font-size: 20px
+    margin-bottom: 10px
+  &__date
+    color: #cacaca
+    margin-top: 29px
+  &__time
+    display: inline-block
+    margin-right: 5px
+  &__creds
+    margin-top: 5px
+
+
+.profile__right_other
+  .profile__goods
+    width: 1170px
+  .p-good
+    width: 223px
+    height: 450px
+
+
+
+

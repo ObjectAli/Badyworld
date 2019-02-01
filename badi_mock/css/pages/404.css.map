@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,aAAQ;EACN,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,QAAQ;EAChB,KAAK,ECKK,OAAO",
+"sources": ["404.sass","../lib/vars.sass"],
+"names": [],
+"file": "404.css"
+}

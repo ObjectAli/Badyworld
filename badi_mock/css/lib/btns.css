@@ -1,0 +1,113 @@
+@keyframes bg {
+  from {
+    background-image: linear-gradient(to right, #f9893d 50%, #d92456); }
+  to {
+    background-image: linear-gradient(to right, #f9893d 50%, #d92456); } }
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif, sans-serif, "Montserrat", sans-serif, sans-serif;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  color: #0b0b0b;
+  background: linear-gradient(#ffe92f 50%, #b019e0 50%);
+  background-size: auto 200%;
+  position: relative; }
+  .btn:hover {
+    background-position: 0 -100%;
+    color: #fff; }
+  .btn_size_default {
+    width: 200px;
+    height: 60px; }
+  .btn_bg_violet {
+    color: #fff;
+    background: linear-gradient(#b019e0 50%, #ffe92f 50%);
+    background-size: auto 200%; }
+    .btn_bg_violet:hover {
+      background-position: 0 -100%;
+      color: #0b0b0b; }
+  .btn__good {
+    width: 235px;
+    height: 65px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+    .btn__good:hover {
+      background: #ffe92f;
+      color: #000000; }
+  .btn_middle {
+    width: 254px;
+    height: 83px;
+    font-size: 12px;
+    font-weight: 500; }
+  .btn__minecraft {
+    width: 243px;
+    height: 76px;
+    text-transform: uppercase;
+    font-size: 24px; }
+  .btn__big {
+    width: 100%;
+    height: 82px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase; }
+    .btn__big:hover {
+      color: #ffffff;
+      text-shadow: #212121 0 0 2px; }
+  .btn_ordinary-cases_premium {
+    color: #fff;
+    background-color: #b019e0; }
+  .btn__transparent {
+    padding: 14px 22px;
+    border: 3px solid #d6d7db;
+    color: #a9aaae;
+    background: transparent;
+    margin-right: 10px; }
+    .btn__transparent.active, .btn__transparent:hover {
+      color: #212121; }
+  .btn__sm {
+    padding: 7px 15px;
+    border: 2px solid transparent;
+    color: #a9aaae;
+    background: transparent;
+    margin-right: 5px; }
+    .btn__sm.active, .btn__sm:hover {
+      color: #212121; }
+  .btn__super {
+    margin: 20px auto 20px;
+    display: flex;
+    width: 568px;
+    height: 130px;
+    border-radius: 80px;
+    background: linear-gradient(to right, #d9d9d9, #d9d9d9, #d9d9d9);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: none; }
+    .btn__super:hover {
+      box-shadow: #d9d9d9 -2px 5px 35px 0px;
+      color: #4a4a4a; }
+
+.ordinary-cases__item:hover .btn, .random-cases__item:hover .btn {
+  background-position: 0 -100%;
+  color: #ffffff; }
+.ordinary-cases__item:hover .btn_bg_violet, .random-cases__item:hover .btn_bg_violet {
+  color: #0b0b0b; }
+
+.good:hover .btn {
+  background: #ffe92f;
+  color: #000000; }
+
+/*# sourceMappingURL=btns.css.map */

@@ -1,0 +1,116 @@
+.good-page__card {
+  margin-bottom: 68px; }
+.good-page__left {
+  width: 925px; }
+.good-page__right {
+  width: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+.good-page__game-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+.good-page__image {
+  width: 283px;
+  height: 420px;
+  overflow: hidden;
+  margin-top: -110px;
+  flex: 0 0 auto;
+  box-shadow: rgba(29, 29, 29, 0.33) 0 7px 79px 18px;
+  margin-right: 50px; }
+.good-page__img {
+  max-width: initial;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+.good-page__breads {
+  color: #b1b5ba;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 11px; }
+  .good-page__breads:before {
+    content: "";
+    position: absolute;
+    border: 2px solid;
+    border-radius: 50%;
+    top: 3px;
+    left: 74px; }
+  .good-page__breads a {
+    color: inherit;
+    display: inline-block;
+    margin-right: 23px; }
+.good-page__title {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 35px 0 25px; }
+.good-page__title3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+.good-page__list {
+  display: flex;
+  flex-wrap: wrap; }
+  .good-page__list-row {
+    width: 200px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #b1b5ba; }
+  .good-page__list-cell {
+    display: inline-block;
+    width: 110px;
+    color: #1f1f1f; }
+.good-page__footer {
+  display: flex;
+  justify-content: space-between; }
+.good-page__min-image {
+  width: 144px;
+  height: 73px;
+  object-fit: cover; }
+.good-page__descr {
+  font-size: 12px;
+  min-height: 40px;
+  margin-bottom: 13px; }
+.good-page__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px; }
+.good-page__game-about {
+  font-size: 12px;
+  line-height: 20px; }
+  .good-page__game-about p {
+    margin-bottom: 15px; }
+.good-page__price {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 22px; }
+  .good-page__price-big {
+    font-size: 120px;
+    text-shadow: #ffdb4c 4px 0 0;
+    line-height: 86px; }
+.good-page__active {
+  font-size: 10px; }
+.good-page__buy-info {
+  font-size: 11px;
+  padding-left: 74px;
+  position: relative; }
+  .good-page__buy-info:before {
+    content: "";
+    position: absolute; }
+  .good-page__buy-info:nth-child(1) {
+    margin-bottom: 27px; }
+    .good-page__buy-info:nth-child(1):before {
+      width: 53px;
+      height: 53px;
+      left: 0;
+      top: 0; }
+  .good-page__buy-info:nth-child(2):before {
+    width: 53px;
+    height: 53px;
+    left: 0;
+    top: 0; }
+
+/*# sourceMappingURL=good.css.map */

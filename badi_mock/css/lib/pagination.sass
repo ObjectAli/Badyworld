@@ -1,0 +1,23 @@
+@import "vars"
+.pagination
+  display: flex
+  justify-content: center
+  li.active a
+    color: #fff
+    background: #5e1b9d
+    border-radius: 50%
+    cursor: default
+  li.disabled
+    a
+      color: #ebefef
+      cursor: default
+  li
+    &.prev, &.next
+      font-size: 23px
+  a
+    color: #202124
+    @include size(36px, 36px)
+    display: flex
+    justify-content: center
+    align-items: center
+

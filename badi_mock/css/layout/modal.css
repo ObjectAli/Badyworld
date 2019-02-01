@@ -1,0 +1,229 @@
+.modal {
+  max-width: 900px;
+  max-height: calc(100% - 50px);
+  border-radius: 7px;
+  padding: 60px 50px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  box-sizing: border-box; }
+  .modal__wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: -1; }
+    .modal__wrapper.active {
+      opacity: 1;
+      z-index: 999; }
+  .modal__close--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; }
+  .modal__close--btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: red;
+    font-size: 20px;
+    border: none;
+    background: none; }
+  .modal__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .modal__col {
+    width: 30%;
+    padding: 0 0 20px;
+    box-sizing: border-box;
+    min-width: 200px; }
+  .modal__form {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+    position: relative;
+    padding: 20px 0 0; }
+  .modal__input {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 16px;
+    font-weight: 600; }
+    .modal__input-box {
+      display: flex;
+      align-items: center; }
+    .modal__input.p-error {
+      border-color: #fc3548; }
+  .modal__currency {
+    width: 50px;
+    position: relative;
+    left: -50px;
+    text-align: right; }
+  .modal__error {
+    color: #fc3548;
+    font-size: 16px;
+    font-weight: 600;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.radio {
+  font-size: 12px;
+  margin: 5px 0 0; }
+  .radio__label {
+    cursor: pointer;
+    position: relative;
+    width: 95%;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    padding-left: 15px;
+    opacity: 0.5;
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; }
+    .radio__label:hover {
+      opacity: 1; }
+  .radio__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    background: url(../img/lol_pays.png) no-repeat; }
+    .radio__icon.wm {
+      background-position: 0 0;
+      width: 27px;
+      height: 27px; }
+    .radio__icon.qiwi {
+      background-position: 0 -27px;
+      width: 27px;
+      height: 30px; }
+    .radio__icon.yandex {
+      background-position: 0 -60px;
+      width: 28px;
+      height: 35px;
+      position: relative;
+      top: -2px; }
+    .radio__icon.bitcoin {
+      background-position: -2px -97px; }
+    .radio__icon.adv {
+      background-position: -1px -124px; }
+    .radio__icon.payeer {
+      background-position: -1px -151px; }
+    .radio__icon.liqpay {
+      background-position: -30px -152px; }
+    .radio__icon.sber {
+      background-position: -30px 0px; }
+    .radio__icon.alfa {
+      background-position: -31px -27px;
+      height: 38px; }
+    .radio__icon.mts {
+      background-position: -30px -70px; }
+    .radio__icon.bee {
+      background-position: -30px -97px; }
+    .radio__icon.megafon {
+      background-position: -30px -124px; }
+    .radio__icon.tele2 {
+      background-position: -1px -176px;
+      width: 30px;
+      height: 14px;
+      margin-right: 10px; }
+    .radio__icon.other {
+      background-position: -1px -194px;
+      width: 75px;
+      height: 21px;
+      margin-right: 2px;
+      margin-left: -8px; }
+  .radio__sub-text {
+    display: block;
+    font-size: 11px; }
+  .radio input {
+    display: none; }
+    .radio input:checked + .radio__label {
+      opacity: 1;
+      border: 2px solid #5fb49e; }
+
+.checkmark {
+  display: flex;
+  align-items: center; }
+  .checkmark a {
+    color: inherit;
+    text-decoration: underline; }
+    .checkmark a:hover {
+      color: #fefefe; }
+  .checkmark input {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    outline: 5px solid;
+    margin-right: 15px;
+    display: none; }
+    .checkmark input:checked + .checkmark__text:before {
+      background: #16b945; }
+    .checkmark input:checked + .checkmark__text:after {
+      left: 26px; }
+    .checkmark input.p-error + .checkmark__text {
+      color: #fc3548; }
+    .checkmark input.p-error:checked + .checkmark__text {
+      color: inherit; }
+
+.descr_p {
+  width: 350px; }
+  .descr_p__text {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer; }
+    .descr_p__text:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 50px;
+      height: 26px;
+      border-radius: 13px;
+      background: #CDD1DA;
+      box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+      transition: 0.2s; }
+    .descr_p__text:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: 0.2s; }
+
+@media (max-width: 900px) {
+  .modal {
+    max-width: 90%;
+    padding: 20px;
+    overflow: hidden; }
+    .modal__form {
+      flex-direction: column;
+      align-items: center; }
+
+  .checkmark {
+    padding: 20px 0; } }
+
+/*# sourceMappingURL=modal.css.map */

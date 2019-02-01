@@ -1,0 +1,92 @@
+@import "./vars"
+@keyframes bg
+  from
+    background-image: linear-gradient(to right, #f9893d 50%, #d92456)
+  to
+    background-image: linear-gradient(to right, #f9893d 50%, #d92456)
+
+.btn
+  display: inline-flex
+  justify-content: center
+  font-family: $fontFuturaPT, sans-serif
+  align-items: center
+  border-radius: 40px
+  font-size: 20px
+  line-height: 60px
+  font-weight: 500
+  transition: 0.3s
+  cursor: pointer
+  border: none
+  color: black
+  background: linear-gradient($yellow 50%, $darkblue 50%)
+  background-size: auto 200%
+  position: relative
+
+  &:hover
+    background-position: 0 -100%
+    color: #fff
+
+  &_size
+    &_default
+      @include size(230px, 74px)
+      z-index: 1
+    &_big
+      @include size(266px, 74px)
+      z-index: 1
+
+    &_small
+      @include size(80px, 30px)
+      background: linear-gradient(to right, #d9d9d9, #d9d9d9, #d9d9d9)
+      margin-right: 5px
+
+      &.active
+        background: $yellow
+        cursor: default
+        font-weight: 600
+
+      &:hover
+        color: $main-color
+
+  &_bg
+    &_grey
+      background: linear-gradient(to right, #d9d9d9, #d9d9d9, #d9d9d9)
+      color: #3a3a3a
+
+
+  &__good
+    @include size(235px, 65px)
+    background: rgba(255, 255, 255, 0.3)
+    box-shadow: none
+    color: #ffffff
+    position: absolute
+    bottom: 38px
+    left: 0
+    right: 0
+    margin: auto
+
+  &_middle
+    @include size(254px, 83px)
+    font-size: 12px
+    font-weight: 500
+
+  &__super
+    margin: 10px auto 20px
+    display: flex
+    @include size(431px, 110px)
+    border-radius: 80px
+    background: #a7baca
+    font-size: 20px
+    font-weight: 500
+    letter-spacing: 2px
+    color: $white-color
+    border: none
+    box-shadow: none
+
+  &_ordinary-cases_premium
+    z-index: 0
+
+.ordinary-cases__item, .random-cases__item
+  &:hover
+    .btn
+      background-position: 0 -100%
+      color: #ffffff

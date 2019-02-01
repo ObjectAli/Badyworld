@@ -1,0 +1,19 @@
+.panels {
+  display: flex;
+  justify-content: space-between; }
+
+.panel__content {
+  width: calc(100% - 410px);
+  box-sizing: border-box; }
+.panel__aside {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self: flex-start; }
+.panel__text {
+  font-size: 18px; }
+  .panel__text p {
+    margin: 0 0 30px; }
+
+/*# sourceMappingURL=panels.css.map */

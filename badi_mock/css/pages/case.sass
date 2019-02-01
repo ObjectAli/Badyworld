@@ -1,0 +1,128 @@
+@import "../lib/vars"
+.case
+  &__card
+    margin-bottom: 50px
+  &__left
+    width: 362px
+    padding: 0 24px 70px 46px
+    color: #fff
+    &:before
+      display: none
+  &__right
+    width: 908px
+    padding: 0
+  &__about
+    padding: 50px 40px
+    height: 447px
+    margin-top: -50px
+    background: url(../img/warrior/warrior1.jpg) no-repeat bottom right #885cb5
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      left: 0
+      right: 0
+      bottom: -9px
+      height: 50%
+      background: linear-gradient(transparent, #fff)
+      z-index: 1
+
+  &__name
+    font-size: 36px
+    font-weight: 700
+    position: relative
+    margin-bottom: 47px
+    z-index: 2
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -28px
+      @include size(40px, 5px)
+      background: #ffffff
+
+  &__descr
+    font-size: 12px
+    line-height: 20px
+    position: relative
+    z-index: 2
+  &__footer
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    padding: 60px 50px 0 0
+  &__cost
+    display: flex
+    align-items: center
+    font-size: 12px
+    &:nth-child(1)
+      margin-bottom: 10px
+  &__luck-price, &__price
+    display: flex
+    &-big
+      font-weight: 700
+  &__luck-price
+    &-big
+      font-size: 24px
+      text-shadow: #ffdb4c -2px 0 0
+  &__price
+    font-size: 16px
+    &-big
+      font-size: 80px
+      text-shadow: #ffdb4c 4px 0 0
+  &__price-title
+    width: 113px
+
+  &__luckbox
+    display: flex
+  &__luck
+    @include size(57px, 57px)
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background: #e4e4e4
+    color: #c3c3c3
+    font-weight: 600
+    margin: 0 6px 13px
+    cursor: pointer
+    &.active
+      background: #35b85d
+      color: #fff
+      cursor: default
+  &__roulette
+    height: 390px
+    overflow: hidden
+    
+.roulette
+  white-space: nowrap
+  position: relative
+  font-size: 0
+  height: 290px
+  margin: 23px 0 0 -5px
+  left: 0
+  &__box
+    padding-top: 25px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      top: 25px
+      bottom: 0
+      left: 322px
+      left: 50%
+      transform: translateX(-50%)
+      width: 7px
+      background: linear-gradient(#ffe850, rgba(255, 232, 80, 0.05))
+  &__item
+    display: inline-block
+    width: 220px
+    height: 100%
+    overflow: hidden
+    padding: 0 5px
+    box-sizing: border-box
+  &__img
+    @include size(100%, 100%)
+    object-fit: cover
+    
+

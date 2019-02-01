@@ -1,0 +1,149 @@
+@import "vars"
+
+.goods
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  font-family: $fontFuturaPT
+
+.good
+  height: 442px
+  width: 290px
+  margin-bottom: 30px
+  position: relative
+  float: left
+  overflow: hidden
+  border-radius: 25px
+  color: #fff
+  &_sm
+    width: calc(50% - 12px)
+    margin: 0 0 20px 12px
+  &:hover
+    .btn__good
+      color: black
+      background: $yellow
+      .buy
+        display: block
+      .cost
+        display: none
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    height: 4px
+  &__account
+    position: absolute
+    right: 35px
+    top: 35px
+  &__label
+    position: absolute
+    left: 0
+    top: 27px
+    border-radius: 0 25px 25px 0
+    @include size(66px, 49px)
+    &:after
+      content: ''
+      background: url(../img/labels/icons.png) no-repeat
+      position: absolute
+    @include size(66px, 49px)
+    &.origin
+      background: $color-origin
+      &:after
+        top: 12px
+        left: 20px
+        @include size(22px, 24px)
+        background-position: 0 0
+    &.steam
+      background: $color-steam
+      &:after
+        top: 16px
+        left: 15px
+        @include size(31px, 21px)
+        background-position: -22px 0px
+    &.uplay
+      background: $color-uplay
+      &:after
+        top: 10px
+        left: 16px
+        @include size(31px, 30px)
+        background-position: -53px 0px
+    &.social
+      background: $color-social
+      &:after
+        top: 9px
+        left: 17px
+        @include size(30px, 30px)
+        background-position: -84px 0px
+  &__img
+    @include size(100%, 100%)
+    object-fit: cover
+  &__info
+    position: absolute
+    width: 100%
+    left: 40px
+    bottom: 40px
+
+.account
+  @include size(80px, 35px)
+  font-size: 10px
+  font-weight: 500
+  text-transform: uppercase
+  background-color: #3c4659
+  text-align: center
+  line-height: 36px
+  right: 0
+  border-radius: 15px 0 0 15px
+
+.buy
+  display: none
+  justify-content: center
+  align-items: center
+.cost
+  display: block
+
+.goods
+  &__all-wrap
+    padding-top: 50px !important
+  &-filters
+    display: flex
+    align-items: center
+    margin: 0 0 30px
+  &-slider
+    width: 275px
+    padding: 0 15px 5px
+    overflow: hidden
+    &-values
+      display: flex
+      justify-content: space-between
+    &-range
+      border-radius: 5px
+      background: #d9e0e9
+      height: 7px
+      margin: 10px 0 0
+      position: relative
+      .ui-slider-range
+        height: 100%
+        position: absolute
+        &:before, &:after
+          content: ''
+          position: absolute
+          width: 13px
+          height: 100%
+          top: 0
+
+        &:after
+          right: -10px
+          background: linear-gradient(to right, #d9e0e9, transparent)
+    .ui-slider-handle
+      width: 15px
+      height: 15px
+      background: $yellow
+      border-radius: 50%
+      position: absolute
+      top: -4px
+      &:focus
+        outline: none
+      &:last-child
+        margin-left: -15px

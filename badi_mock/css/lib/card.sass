@@ -1,0 +1,41 @@
+@import "vars"
+
+.card
+  display: flex
+  justify-content: space-between
+  height: 667px
+  background: #fff
+  box-shadow: rgba(74, 32, 115, 0.09) 0 7px 79px 33px
+  position: relative
+  &_infinite
+    min-height: 667px
+    height: auto
+  &__column
+    padding: 50px 50px 70px
+    height: 100%
+    box-sizing: border-box
+    &:nth-child(1)
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 98px
+        /*@include size(1px, 499px)
+        width: 1px
+        bottom: 77px
+        background: #e1dfe3
+        left: 100%
+
+  &__content
+    width: calc(100% - 410px)
+    box-sizing: border-box
+  &__aside
+    width: 400px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-self: flex-start
+  &__text
+    font-size: 18px
+    p
+      margin: 0 0 30px

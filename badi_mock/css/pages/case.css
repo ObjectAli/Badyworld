@@ -1,0 +1,75 @@
+.case__left {
+  width: 362px;
+  padding: 0 24px 70px 46px;
+  color: #fff; }
+  .case__left:before {
+    display: none; }
+.case__right {
+  width: 908px;
+  padding: 0; }
+.case__about {
+  background: linear-gradient(#996ac7 20%, #fff 75%);
+  padding: 50px 40px;
+  height: 100%;
+  margin-top: -50px; }
+.case__name {
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 47px; }
+  .case__name:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 40px;
+    height: 5px;
+    background: #ffffff; }
+.case__descr {
+  font-size: 12px;
+  line-height: 20px; }
+.case__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 60px 50px 0 0; }
+.case__cost {
+  display: flex;
+  align-items: center;
+  font-size: 12px; }
+  .case__cost:nth-child(1) {
+    margin-bottom: 10px; }
+.case__luck-price, .case__price {
+  display: flex; }
+  .case__luck-price-big, .case__price-big {
+    font-weight: 600; }
+.case__luck-price-big {
+  font-size: 24px;
+  text-shadow: #ffdb4c -2px 0 0; }
+.case__price {
+  font-size: 16px; }
+  .case__price-big {
+    font-size: 80px;
+    text-shadow: #ffdb4c 4px 0 0; }
+.case__price-title {
+  width: 113px; }
+.case__luckbox {
+  display: flex; }
+.case__luck {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #e4e4e4;
+  color: #c3c3c3;
+  font-weight: 600;
+  margin: 0 6px 13px;
+  cursor: pointer; }
+  .case__luck.active {
+    background: #35b85d;
+    color: #fff;
+    cursor: default; }
+
+/*# sourceMappingURL=case.css.map */

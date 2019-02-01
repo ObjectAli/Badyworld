@@ -1,0 +1,14 @@
+.slide-enter-active, .slide-leave-active {
+  transition: transform 0.2s; }
+
+.slide-enter, .slide-leave-to {
+  transform: translateX(-100%); }
+
+.page-slide-enter-active, .page-slide-leave-active {
+  transition: transform 0.2s; }
+
+.page-slide-enter, .page-slide-leave-to {
+  transform: translateX(100%);
+  transition: transform 0s; }
+
+/*# sourceMappingURL=transitions.css.map */

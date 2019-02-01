@@ -1,0 +1,186 @@
+@import "./vars"
+.head
+  display: flex
+  justify-content: space-between
+  overflow: hidden
+  height: 594px
+  margin: 0 0 45px
+  position: relative
+  color: #fff
+  &__head
+    position: absolute
+    top: 60px
+    left: 65px
+  &__profile
+    height: auto
+  &__full
+    border-radius: $border-radius
+    width: 100%
+    background: #fff
+    padding: $sides-padding
+    box-sizing: border-box
+  &__page
+    min-height: 400px
+    height: auto
+  &--error
+    justify-content: center
+    align-items: center
+    flex-direction: column
+  &__left, &__right
+    box-sizing: border-box
+    position: relative
+    border-radius: $border-radius
+    overflow: hidden
+  &__left
+    width: 750px
+    display: flex
+    justify-content: center
+    align-items: center
+    &-top
+      display: block
+  &__right
+    width: 400px
+    padding: $sides-padding
+    background: url(../img/good-info-bg.png) no-repeat top center
+  &__list
+    margin-bottom: 26px
+    &-row
+      display: flex
+      font-size: 18px
+      font-weight: 600
+      color: #fff
+      text-transform: uppercase
+      margin-bottom: 12px
+    &-cell
+      width: 50%
+      font-weight: 400
+  &__breads
+    color: #fff
+    text-transform: uppercase
+    z-index: 2
+    &:before
+      content: ''
+  &__title
+    font-size: 54px
+  &__platform
+    font-size: 18px
+  &__slider
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &_footer
+      position: absolute
+      bottom: 60px
+      left: 0
+      right: 0
+      margin: auto
+      width: 620px
+      height: 114px
+      display: flex
+      justify-content: space-between
+    &_min-img
+      width: 192px
+      border-radius: $border-radius
+      overflow: hidden
+      cursor: pointer
+    img
+      max-width: initial
+      max-height: 100%
+
+
+  &__descr
+    font-size: 16px
+    margin: 0 0 25px
+    height: 90px
+    &-tab
+      height: 90px
+    &-success
+      color: $colored-green
+      font-size: 16px
+      font-weight: 600
+
+  &__footer
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-transform: uppercase
+    align-items: flex-end
+    letter-spacing: 0
+    margin-bottom: 35px
+  &__price, &__old-price
+    display: flex
+
+  &__price
+    color: #fff
+    font-size: 105px
+    text-align: right
+    line-height: 78px
+    &-sub
+      font-size: 25px
+      line-height: 25px
+  &__old-price
+    color: #2cc67d
+    font-size: 48px
+    line-height: 37px
+    &-sum
+      text-decoration: line-through
+    &-sub
+      font-size: 16px
+      line-height: 11px
+
+
+@media (max-width: 900px)
+  .head
+    flex-direction: column
+    height: auto
+    &__profile
+      flex-direction: column-reverse
+    &__page
+      min-height: auto
+    &__left, &__right, &__full
+      width: 100%
+      padding: $sides-padding-xs
+    &__footer
+      position: static
+      margin-top: 50px
+    &__descr
+      height: auto
+      &-tab
+        height: auto
+    &__flex
+      margin-right: 10px
+      &-md
+        display: flex
+        flex-wrap: wrap
+    &__color
+      height: 30px
+      width: 30px
+      top: 3px
+    &__breads
+      right: 20px
+      top: 20px
+      left: auto
+    &__thing
+      padding: 0
+
+
+@media (max-width: 550px)
+  .head
+    padding-top: 66px
+    &__thing
+      width: 100%
+      overflow: visible
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+    &__breads
+      left: 35px
+    &__title
+      margin: 0 0 20px
+      font-size: 25px
+    .good__sign
+      top: -20px
+      right: 20px
+

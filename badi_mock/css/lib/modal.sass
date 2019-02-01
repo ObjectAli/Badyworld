@@ -1,0 +1,206 @@
+@import "./vars"
+.modal
+  width: 640px
+  padding: 45px
+  position: relative
+  z-index: 2
+  background: #fff
+  box-sizing: border-box
+  &_with-head
+    padding: 0
+    .modal
+      &__close--btn
+        top: 40px
+        right: 40px
+        &:before, &:after
+          background: rgba(255, 255, 255, 0.5)
+      &__title
+        color: #fff
+        text-align: left
+  &__head
+    padding: 40px 45px 25px
+    background: linear-gradient(to right, #a34bc1 50%, #7836c6 100%)
+    color: #fff
+  &__body
+    padding: 20px 45px 40px
+  &__wrapper
+    position: fixed
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    justify-content: center
+    background: rgba(32, 32, 32, 0.7)
+    top: 0
+    left: 0
+    transition: 0.3s
+    opacity: 0
+    z-index: -1
+    &.active
+      opacity: 1
+      z-index: 999
+  &__close
+    &--bg
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      background: none
+      border: none
+      padding: 0
+      cursor: pointer
+    &--btn
+      position: absolute
+      top: 25px
+      right: 25px
+      border: none
+      background: none
+      z-index: 5
+
+      width: 20px
+      height: 20px
+      cursor: pointer
+      font-size: 0
+      &:before, &:after
+        content: ""
+        width: 2px
+        height: 100%
+        background: rgba(0, 0, 0, 1)
+        position: absolute
+        top: 0
+        right: 6px
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+  &__title
+    color: $main-color
+    font-weight: 700
+    font-size: 36px
+    text-align: center
+
+  &__list
+    margin: 30px 0
+    .head__list
+      &-row
+        color: $main-color
+        justify-content: space-between
+  &__right 
+    text-align: left
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__footer
+    display: flex
+    font-size: 10px
+    color: #a9a9a9
+    font-weight: 600
+    justify-content: space-between
+    width: 100%
+    margin: 3px 0 0
+  &__descr
+    font-size: 10px
+    color: #202124
+    margin: 15px 0 25px
+    line-height: 15px
+  &_left
+    width: 746px
+    min-height: 314px
+    padding-left: 324px
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      bottom: 0
+      width: 175px
+  &_green:before
+    background: linear-gradient(#34b28d, #178a97)
+  &_yellow:before
+    background: linear-gradient(#ffe159, #ffb811)
+  &__image
+    @include size(205px, 304px)
+    position: absolute
+    left: 73px
+    top: -27px
+    box-shadow: rgba(29, 29, 29, 0.33) 0 8px 49px 13px
+  &__creds
+    border-bottom: 1px solid #d6d6d6
+    margin-bottom: 15px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 8px 0
+    font-weight: 700
+    font-size: 16px
+    color: #343434
+    &-title
+      text-transform: uppercase
+      font-size: 10px
+      font-weight: 900
+      color: #bfbfbf
+  &__copy-btn
+    border: none
+    background: none
+    color: #d9d9d9
+    transition: 0.3s
+    &:hover
+      color: #d1d1d1
+    &:active
+      opacity: 0.5
+
+.checkmark
+  display: flex
+  align-items: center
+  padding-right: 30px
+  a
+    color: inherit
+    text-decoration: underline
+    &:hover
+      color: $colored2
+  input
+    width: 20px
+    height: 20px
+    vertical-align: middle
+    outline: 5px solid
+    margin-right: 15px
+    display: none
+    &:checked + .checkmark__text
+      &:before
+        background: $colored-green
+      &:after
+        left: 26px
+    &.p-error + .checkmark__text
+      color: $colored
+    &.p-error:checked + .checkmark__text
+      color: inherit
+  &__text
+    position: relative
+    padding: 0 0 0 60px
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 50px
+      height: 26px
+      border-radius: 13px
+      background: #CDD1DA
+      box-shadow: inset 0 2px 3px rgba(0,0,0,.2)
+      transition: .2s
+
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 2px
+      width: 22px
+      height: 22px
+      border-radius: 10px
+      background: #FFF
+      box-shadow: 0 2px 5px rgba(0,0,0,.3)
+      transition: .2s

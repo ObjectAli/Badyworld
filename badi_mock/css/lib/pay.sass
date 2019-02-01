@@ -1,0 +1,168 @@
+@import "vars"
+
+.pay
+  &__tabs
+    display: flex
+    justify-content: space-between
+    position: relative
+    height: 34px
+    margin: 25px 0 0
+    /*&:before
+      content: ''
+      border-top: 1px solid rgba(255, 255, 255, 0.26)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+
+  &__tab-btn
+    color: #ffffff
+    cursor: pointer
+    display: flex
+    align-items: center
+    border-top: 1px solid
+    transition: background .2s
+    position: relative
+    opacity: 0.4
+    padding-right: 20px
+    padding-left: 1px
+    &+&
+      padding-left: 11px
+    &.active
+      opacity: 1
+      cursor: default
+
+  &__tab
+    display: none
+    justify-content: space-between
+    flex-wrap: wrap
+    &.active
+      display: flex
+
+  &__type-label
+    cursor: pointer
+    position: relative
+    @include size(100%, 100%)
+    border: 1px solid #d6d6d6
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.2s
+    &:hover
+      border-color: rgba(#a066d6, 0.8)
+  &__icon
+    display: inline-block
+    vertical-align: middle
+    width: 142px
+    height: 25px
+    background: url(../img/pays.png) no-repeat
+    &.wm
+      background-position: -8px -50px
+      @include size(142px, 37px)
+
+    &.qiwi
+      background-position: -18px 0px
+      @include size(114px, 50px)
+
+    &.yandex
+      background-position: -0px -260px
+      @include size(132px, 51px)
+
+    &.bitcoin
+      background-position: 0px -95px
+      @include size(120px, 28px)
+
+    &.advcash
+      background-position: -10px -144px
+      @include size(140px, 27px)
+
+    &.payeer
+      background-position: -12px -212px
+      @include size(128px, 26px)
+
+    &.liqpay
+      background-position: -149px -1px
+      height: 29px
+
+    &.sber
+      background-position: -150px -35px
+      height: 41px
+
+    &.alfa
+      background-position: -149px -76px
+      height: 43px
+      width: 144px
+
+    &.mts
+      background-position: -149px -155px
+      height: 52px
+      width: 144px
+
+    &.bee
+      background-position: -149px -207px
+      height: 44px
+      width: 144px
+
+    &.megafon
+      background-position: -149px -251px
+      height: 26px
+      width: 144px
+
+    &.tele2
+      background-position: -149px -277px
+      height: 53px
+      width: 138px
+
+    &.other
+      background-position: -149px -120px
+      height: 35px
+      width: 144px
+
+  &__sub-text
+    display: block
+    font-size: 11px
+
+  &__type
+    position: relative
+    @include size(176px, 85px)
+    margin: 0 0 13px
+    input[type="radio"]
+      display: none
+      &:checked + .pay__type-label
+        border-color: #a066d6
+
+
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    margin-top: 20px
+  &__submit
+    height: 82px
+    width: 308px
+    font-size: 12px
+  &__input
+    height: 82px
+    width: 230px
+    font-size: 14px
+    color: #949494
+    background: #e7e7e7
+    border-radius: 60px
+    border: 0
+    box-sizing: border-box
+    padding: 0 40px
+
+  &__error
+    color: $colored
+    font-size: 16px
+    font-weight: 600
+    display: none
+    position: absolute
+    left: 0
+    bottom: -25px
+    &.active
+      display: block
+
+

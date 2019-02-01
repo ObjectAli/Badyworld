@@ -1,0 +1,249 @@
+@import "../lib/vars"
+.modal
+  max-width: 900px
+  max-height: calc(100% - 50px)
+  border-radius: $border-radius
+  padding: $sides-padding
+  position: relative
+  z-index: 2
+  background: #fff
+  box-sizing: border-box
+
+  &__wrapper
+    position: fixed
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    justify-content: center
+    background: rgba(0, 0, 0, 0.8)
+    top: 0
+    left: 0
+    transition: 0.3s
+    opacity: 0
+    z-index: -1
+    &.active
+      opacity: 1
+      z-index: 999
+  &__close
+    &--bg
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      background: none
+      border: none
+      padding: 0
+      cursor: pointer
+    &--btn
+      position: absolute
+      top: 10px
+      right: 20px
+      color: red
+      font-size: 20px
+      border: none
+      background: none
+  &__inner
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__col
+    width: 30%
+    padding: 0 0 20px
+    box-sizing: border-box
+    min-width: 200px
+  &__form
+    display: flex
+    align-items: center
+    margin: 0 0 15px
+    position: relative
+    padding: 20px 0 0
+  &__input
+    width: 200px
+    padding: 15px
+    border: none
+    border-bottom: 2px solid
+    font-size: 16px
+    font-weight: 600
+    &-box
+      display: flex
+      align-items: center
+    &.p-error
+      border-color: $colored
+  &__currency
+    width: 50px
+    position: relative
+    left: -50px
+    text-align: right
+
+  &__error
+    color: $colored
+    font-size: 16px
+    font-weight: 600
+    display: none
+    position: absolute
+    left: 0
+    top: 0
+
+.radio
+  font-size: 12px
+  margin: 5px 0 0
+  &__label
+    cursor: pointer
+    position: relative
+    width: 95%
+    border-radius: 30px
+    border: 2px solid transparent
+    padding-left: 15px
+    opacity: 0.5
+    height: 45px
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    &:hover
+      opacity: 1
+  &__icon
+    display: inline-block
+    vertical-align: middle
+    width: 25px
+    height: 25px
+    margin-right: 15px
+    background: url(../img/lol_pays.png) no-repeat
+    &.wm
+      background-position: 0 0
+      width: 27px
+      height: 27px
+
+    &.qiwi
+      background-position: 0 -27px
+      width: 27px
+      height: 30px
+
+    &.yandex
+      background-position: 0 -60px
+      width: 28px
+      height: 35px
+      position: relative
+      top: -2px
+
+    &.bitcoin
+      background-position: -2px -97px
+
+    &.adv
+      background-position: -1px -124px
+
+    &.payeer
+      background-position: -1px -151px
+
+    &.liqpay
+      background-position: -30px -152px
+
+    &.sber
+      background-position: -30px -0px
+
+    &.alfa
+      background-position: -31px -27px
+      height: 38px
+
+    &.mts
+      background-position: -30px -70px
+
+    &.bee
+      background-position: -30px -97px
+
+    &.megafon
+      background-position: -30px -124px
+
+    &.tele2
+      background-position: -1px -176px
+      width: 30px
+      height: 14px
+      margin-right: 10px
+
+    &.other
+      background-position: -1px -194px
+      width: 75px
+      height: 21px
+      margin-right: 2px
+      margin-left: -8px
+
+  &__sub-text
+    display: block
+    font-size: 11px
+  input
+    display: none
+    &:checked + .radio__label
+      opacity: 1
+      border: 2px solid #5fb49e
+
+
+.checkmark
+  display: flex
+  align-items: center
+  a
+    color: inherit
+    text-decoration: underline
+    &:hover
+      color: $colored2
+  input
+    width: 20px
+    height: 20px
+    vertical-align: middle
+    outline: 5px solid
+    margin-right: 15px
+    display: none
+    &:checked + .checkmark__text
+      &:before
+        background: $colored-green
+      &:after
+        left: 26px
+    &.p-error + .checkmark__text
+      color: $colored
+    &.p-error:checked + .checkmark__text
+      color: inherit
+
+.descr_p
+  width: 350px
+
+
+  &__text
+    position: relative
+    padding: 0 0 0 60px
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 50px
+      height: 26px
+      border-radius: 13px
+      background: #CDD1DA
+      box-shadow: inset 0 2px 3px rgba(0,0,0,.2)
+      transition: .2s
+
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 2px
+      width: 22px
+      height: 22px
+      border-radius: 10px
+      background: #FFF
+      box-shadow: 0 2px 5px rgba(0,0,0,.3)
+      transition: .2s
+
+@media (max-width: 900px)
+  .modal
+    max-width: 90%
+    padding: $sides-padding-xs
+    overflow: hidden
+    &__form
+      flex-direction: column
+      align-items: center
+  .checkmark
+    padding: 20px 0

@@ -1,0 +1,255 @@
+@import "../lib/vars"
+
+.ordinary-cases
+  grid-row: 2
+  width: 100%
+  overflow: hidden
+  padding: 0 0 60px
+
+  &__cases
+    position: relative
+    display: flex
+    margin: 0 80px 0
+    justify-content: space-between
+    height: 600px
+
+  &__item
+    padding: 55px 40px 54px
+    color: $dark-color
+    font-family: $fontFuturaPT
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-content: center
+    position: relative
+    text-align: center
+    border-radius: 10px
+    width: 320px
+    height: 510px
+    background-color: $white-color
+    box-shadow: 0 30px 30px 0 rgba(218, 223, 229, 0.7)
+
+    &:nth-child(1)
+      margin-top: 64px
+      background: url("../img/stones/stone1.jpg") #ffffff center 70px no-repeat
+
+      &:before
+        position: absolute
+        content: ' '
+        top: 0
+        left: 0
+        height: 12px
+        width: 319px
+        background: $grad1
+        border-radius: 10px 10px 0 0
+
+    &:nth-child(2)
+      width: 374px
+      height: 590px
+      padding: 50px 54px 58px
+      background: url("../img/stones/stone2.jpg") #ffffff center 70px no-repeat
+
+      &:before
+        position: absolute
+        content: ' '
+        top: 0
+        left: 0
+        height: 12px
+        width: 373px
+        background: $grad2
+        border-radius: 10px 10px 0 0
+
+    &:nth-child(3)
+      margin-top: 64px
+      background: url("../img/stones/stone3.jpg") #ffffff center 70px no-repeat
+      &:before
+        position: absolute
+        content: ' '
+        top: 0
+        left: 0
+        height: 12px
+        width: 319px
+        background: $grad3
+        border-radius: 10px 10px 0 0
+
+  &__minecraft
+    font-weight: 600
+    font-size: 14px
+    color: #bfbfbf
+
+  &__name
+    position: relative
+    font-family: $fontFuturaPT
+    font-weight: 700
+    top: 0
+    margin-bottom: 230px
+    &1
+      font-size: 34px
+    &2
+      margin-bottom: 280px
+      font-weight: 800
+      font-size: 46px
+    &3
+      font-size: 36px
+
+  &__descr
+    position: relative
+    font-family: $fontFuturaPT
+    font-size: 14px
+    font-weight: 500
+    line-height: 18px
+    margin: 0 auto 10px
+
+.overwatch
+  font-size: 17px
+  font-weight: 500
+  line-height: 20px
+  width: 800px
+
+.purchases
+  position: relative
+  overflow: hidden
+
+  &__information
+    @extend .wrapper
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    text-align: center
+    justify-content: center
+
+  &__tittle
+    font-size: 50px
+    font-weight: 600
+    width: 100%
+
+  &__circles
+    display: flex
+    justify-content: center
+    margin: 10px 0 10px
+    width: 100%
+
+  &__circle
+    @include size(10px, 10px)
+    margin: 0 3px 0
+    border-radius: 5px
+    &:nth-child(1)
+      background: $circle1
+    &:nth-child(2)
+      background: $circle2
+    &:nth-child(3)
+      background: $circle3
+
+
+  &__description
+    line-height: 21px
+    font-size: 17px
+    font-weight: 600
+    width: 860px
+
+  &__live
+    display: flex
+    margin-top: 40px
+    z-index: 0
+
+.purchase
+  display: block
+  position: relative
+  overflow: hidden
+  border-radius: $border-radius
+  @include size(177px, 177px)
+  margin-right: 20px
+  flex: 0 0 auto
+
+  &:first-child
+    margin-left: -67px
+
+  img
+    object-fit: cover
+    @include size(100%, 100%)
+
+.random
+  position: relative
+  height: 931px
+  box-sizing: border-box
+  font-family: $fontFuturaPT
+  padding-top: 23px
+
+.random-cases
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  position: relative
+  @extend .wrapper
+  height: 760px
+  color: $white-color
+  padding-left: 120px
+
+  &__descr
+    font-weight: 600
+    font-size: 15px
+    line-height: 20px
+    z-index: 0
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    text-align: center
+    box-sizing: border-box
+    border-radius: 20px
+    width: 328px
+    z-index: 1
+
+    &1, &2, &3
+      height: 567px
+
+    &1
+      padding: 42px 24px 50px
+      background: url("../img/cases/case1.jpg") no-repeat #33363d
+      position: relative
+      &:before
+        position: absolute
+        content: url("../img/arm.png")
+        z-index: 2
+        left: 0
+        bottom: 0
+    &2
+      padding: 42px 30px 50px
+      background: url("../img/cases/case2.jpg") no-repeat #1748ed
+
+    &3
+      padding: 42px 50px 50px
+      width: 406px
+      background: url("../img/cases/case3.jpg") no-repeat #c61f39
+      &:before
+        position: absolute
+        content: url("../img/monster.png")
+        z-index: 2
+        right: 0
+        top: 193px
+
+  &__name
+    font-weight: 600
+    position: relative
+    font-size: 48px
+    margin-bottom: 5px
+
+    &_ultra
+      font-size: 72px
+
+  &__description
+    font-weight: 300
+    font-size: 15px
+    line-height: 18px
+    opacity: 0.9
+
+    &_ultra
+      font-size: 18px
+      line-height: 20px
+
+  &__btn
+    @include size(260px, 94px)
+    border-radius: 90px
+    margin-top: 20px

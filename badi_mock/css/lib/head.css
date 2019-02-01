@@ -1,0 +1,179 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 594px;
+  margin: 0 0 45px;
+  position: relative;
+  color: #fff; }
+  .head__head {
+    position: absolute;
+    top: 60px;
+    left: 65px; }
+  .head__profile {
+    height: auto; }
+  .head__full {
+    border-radius: 7px;
+    width: 100%;
+    background: #fff;
+    padding: 60px 50px;
+    box-sizing: border-box; }
+  .head__page {
+    min-height: 400px;
+    height: auto; }
+  .head--error {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .head__left, .head__right {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden; }
+  .head__left {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .head__left-top {
+      display: block; }
+  .head__right {
+    width: 400px;
+    padding: 60px 50px;
+    background: url(../img/good-info-bg.png) no-repeat top center; }
+  .head__list {
+    margin-bottom: 26px; }
+    .head__list-row {
+      display: flex;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 12px; }
+    .head__list-cell {
+      width: 50%;
+      font-weight: 400; }
+  .head__breads {
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2; }
+    .head__breads:before {
+      content: ""; }
+  .head__title {
+    font-size: 54px; }
+  .head__platform {
+    font-size: 18px; }
+  .head__slider {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .head__slider_footer {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 620px;
+      height: 114px;
+      display: flex;
+      justify-content: space-between; }
+    .head__slider_min-img {
+      width: 192px;
+      border-radius: 7px;
+      overflow: hidden;
+      cursor: pointer; }
+    .head__slider img {
+      max-width: initial;
+      max-height: 100%; }
+  .head__descr {
+    font-size: 16px;
+    margin: 0 0 25px;
+    height: 90px; }
+    .head__descr-tab {
+      height: 90px; }
+    .head__descr-success {
+      color: #16b945;
+      font-size: 16px;
+      font-weight: 600; }
+  .head__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    align-items: flex-end;
+    letter-spacing: 0;
+    margin-bottom: 35px; }
+  .head__price, .head__old-price {
+    display: flex; }
+  .head__price {
+    color: #fff;
+    font-size: 105px;
+    text-align: right;
+    line-height: 78px; }
+    .head__price-sub {
+      font-size: 25px;
+      line-height: 25px; }
+  .head__old-price {
+    color: #2cc67d;
+    font-size: 48px;
+    line-height: 37px; }
+    .head__old-price-sum {
+      text-decoration: line-through; }
+    .head__old-price-sub {
+      font-size: 16px;
+      line-height: 11px; }
+
+@media (max-width: 900px) {
+  .head {
+    flex-direction: column;
+    height: auto; }
+    .head__profile {
+      flex-direction: column-reverse; }
+    .head__page {
+      min-height: auto; }
+    .head__left, .head__right, .head__full {
+      width: 100%;
+      padding: 20px; }
+    .head__footer {
+      position: static;
+      margin-top: 50px; }
+    .head__descr {
+      height: auto; }
+      .head__descr-tab {
+        height: auto; }
+    .head__flex {
+      margin-right: 10px; }
+      .head__flex-md {
+        display: flex;
+        flex-wrap: wrap; }
+    .head__color {
+      height: 30px;
+      width: 30px;
+      top: 3px; }
+    .head__breads {
+      right: 20px;
+      top: 20px;
+      left: auto; }
+    .head__thing {
+      padding: 0; } }
+@media (max-width: 550px) {
+  .head {
+    padding-top: 66px; }
+    .head__thing {
+      width: 100%;
+      overflow: visible;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .head__breads {
+      left: 35px; }
+    .head__title {
+      margin: 0 0 20px;
+      font-size: 25px; }
+    .head .good__sign {
+      top: -20px;
+      right: 20px; } }
+
+/*# sourceMappingURL=head.css.map */
